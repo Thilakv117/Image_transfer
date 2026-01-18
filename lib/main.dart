@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:image_transfer/screens/auth_screen/login/login_page.dart';
+import 'package:image_transfer/utils/routes.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,6 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: LoginPage(),
+      routes: {
+        Routes.login: (context) => LoginPage(),
+      },
     );
   }
 }
